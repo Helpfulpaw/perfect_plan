@@ -4,10 +4,7 @@ The repository defines two processes: executing an existing task or creating a
 new one.
 
 ## Execute a Task
-If the request is to **execute a task**, follow the step-by-step instructions
-provided by the script. Role prompts are located in
-`docs/ROLES_PROMPTS.md` and each role may have a template under
-`docs/roles/`.
+If the request is to **execute a task**, run `python src/random_task.py` to select a pending task. Then open the responsible role's prompt under `docs/roles/` and follow `process/EXECUTE_TASK.md`.
 
 ## Create a Task
 If the request is to **create a task**, follow `process/CREATE_TASK.md` to add
@@ -28,3 +25,4 @@ After completing a task:
   pending task.
 - Record new reference documents in each task's `followups.md` so future
   contributors understand context.
+- Split role prompts into individual files under `docs/roles/` and added a linter to enforce their format.
