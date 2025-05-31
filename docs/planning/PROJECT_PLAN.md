@@ -19,6 +19,7 @@
 | 12 | **Create Maintenance & Support Plan** (`docs/MAINTENANCE_PLAN.md`) | Support Lead | Project Manager | Plan covers issue triage, SLAs, routine tasks; approved by PM; passes `doc_linter`. | Pending |
 | 13 | **Phase‑gate review & baseline** | Project Manager | Architect, QA Lead | All artifacts frozen at v1.0 tag; RTM complete; milestone closed in project board. | Pending |
 | 14 | **Audit task list for role & reviewer coverage** | Project Manager | Architect | Every task has clearly defined responsible and reviewer roles. | Pending |
+| 15 | **Add task DAG linter** (`linters/task_dag_linter.py`) | Programmer | QA Lead | Linter verifies tasks form a DAG and docs are up to date. | Pending |
 
 > **Progress Tracking:** Update the Status column and add ✅ in the DoD column once criteria are met.
 
