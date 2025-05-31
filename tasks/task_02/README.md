@@ -17,4 +17,4 @@ Add README.md & LICENSE. README outlines purpose & structure; LICENSE file commi
 - Verified Task 2 requirements in `docs/planning/PROJECT_PLAN.md`.
 - Added an MIT `LICENSE` file.
 - Rewrote `README.md` to describe repository structure and purpose.
-- Ran `doc_linter` on README and LICENSE to confirm no TODO markers.
+- Ran `doc_linter` on README and LICENSE to confirm no placeholder markers.
