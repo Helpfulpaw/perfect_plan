@@ -10,6 +10,7 @@ LINTERS = [
     'linters/code_linter.py',
     'linters/role_linter.py',
     'linters/diagram_linter.py',
+    'linters/architecture_linter.py',
 ]
 
 def run_linter(script, file):
@@ -21,11 +22,11 @@ def test_linter_pass(tmp_path):
     role = tmp_path / "role.md"
     role.write_text("# Dev\nPrompt\n")
     diagram = tmp_path / "diagram.puml"
-    diagram.write_text("@startuml\nA->B: hi\n@enduml\n")
+    diagram.write_text("@startuml\ncomponent A\nA --> B\n@enduml\n")
     for script in LINTERS:
         if script.endswith("role_linter.py"):
             file = role
-        elif script.endswith("diagram_linter.py"):
+        elif script.endswith("diagram_linter.py") or script.endswith("architecture_linter.py"):
             file = diagram
         else:
             file = target
@@ -42,7 +43,7 @@ def test_linter_fail(tmp_path):
     for script in LINTERS:
         if script.endswith("role_linter.py"):
             file = role
-        elif script.endswith("diagram_linter.py"):
+        elif script.endswith("diagram_linter.py") or script.endswith("architecture_linter.py"):
             file = diagram
         else:
             file = target

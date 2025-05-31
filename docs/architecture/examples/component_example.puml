@@ -1,0 +1,5 @@
+@startuml
+component Web
+component DB
+Web --> DB : query
+@enduml

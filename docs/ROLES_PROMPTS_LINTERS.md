@@ -5,7 +5,7 @@ This registry links each project role to its associated prompt and the linter ty
 | Role | Prompt | Linter |
 | ---- | ------ | ------ |
 | Project Manager | "Ensure tasks are planned, documented, and tracked. When reviewing, verify alignment with overall schedule." | doc_linter.py |
-| Architect | "Design the technical structure. Review tasks for architectural consistency and scalability." | doc_linter.py |
+| Architect | "Design the technical structure. Review tasks for architectural consistency and scalability." | architecture_linter.py |
 | Systems Analyst | "Define and analyze requirements. Review tasks for completeness of requirements." | srs_linter.py |
 | Programmer | "Implement code according to specifications. Review tasks for code quality and test coverage." | code_linter.py |
 | DevOps | "Maintain CI/CD pipelines and infrastructure. Review tasks for automation and deployment readiness." | code_linter.py |
