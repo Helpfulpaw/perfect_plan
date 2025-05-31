@@ -33,6 +33,9 @@
 | 25 | **Define QA Lead methodologies** (`docs/roles/qa_lead.md`) | QA Lead | Support Lead | Document describes test automation and BDD; passes `doc_linter`. | Pending |
 | 26 | **Define Support Lead methodologies** (`docs/roles/support_lead.md`) | Support Lead | Project Manager | Document includes ITIL processes and root cause analysis; passes `doc_linter`. | Pending |
 | 27 | **Refactor role prompts** (`src/role_utils.py`, template + linter) | Programmer | QA Lead | Role registry lists slugs only; prompts stored separately; linter validates each role file. | Pending |
+| 28 | **Integrate metrics scripts into workflow** (`metrics.yml`) | DevOps | Architect | `metrics.yml` runs scripts from task 6 and pushes results; CI shows success. | Pending |
+| 29 | **Audit role methodology documents** (`docs/roles/*.md`) | QA Lead | Project Manager | Each role file lists at least three methodologies and passes `doc_linter`; tasks 20‑26 marked Done. | Pending |
+| 30 | **Add Responsible Role field to templates** (`docs/*_TEMPLATE.md`, examples, `linters/artifact_role_linter.py`) | Architect | Systems Analyst, Programmer | Templates and examples include a `Responsible Role` section; new linter ensures presence. | Pending |
 > **Progress Tracking:** Update the Status column and add ✅ in the DoD column once criteria are met.
 
 ---
