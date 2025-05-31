@@ -20,9 +20,6 @@ After completing a task:
 ### Lessons Learned
 - Use stub commands in CI when dependencies are incomplete to keep workflows passing.
 - Exclude test fixtures from repository-wide linters to avoid false failures.
-- Avoid scanning the `tasks/` directory to discover new work. Use
-  `docs/planning/PROJECT_PLAN.md` or `python src/random_task.py` to select a
-  pending task.
 - Record new reference documents in each task's `followups.md` so future
   contributors understand context.
 - Split role prompts into individual files under `docs/roles/` and added a linter to enforce their format.
