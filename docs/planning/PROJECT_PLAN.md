@@ -6,7 +6,7 @@
 | -- | ---- | ---------------- | -------------- | ------------------------ | ------ |
 | 0  | **Create reviewer roles and prompts** (`docs/ROLES_PROMPTS.md`, `AGENTS.md`) | Project Manager | Architect | Roles file with prompts exists; root instructions reference it. | Done |
 | 1  | **Initialize repository scaffold** (root folders `/docs`, `/src`, `/linters`, `/metrics`, `.github/workflows`) | Project Manager | Architect | All directories created, pushed to `main`, README stub present. ✅ | Done |
-| 2  | **Add README.md & LICENSE** | Project Manager | Systems Analyst | README outlines purpose & structure; LICENSE file committed; both pass `doc_linter`. | Pending |
+| 2  | **Add README.md & LICENSE** | Project Manager | Systems Analyst | README outlines purpose & structure; LICENSE file committed; both pass `doc_linter`. ✅ | Done |
 | 3  | **Author core templates** (`ARCHITECTURE_TEMPLATE.md`, `SRS_TEMPLATE.md`, `TESTPLAN_TEMPLATE.md`, etc.) | Architect | Project Manager | Each template contains only section headings + field descriptions; token ≤ 3000; passes `doc_linter`. | Pending |
 | 4  | **Create example artifacts** (`*_EXAMPLE.md`) demonstrating template use | Systems Analyst & Architect | QA Lead | Example docs fully populated for this repo, reference IDs valid, lint‑clean. | Pending |
 | 5  | **Implement linters** (`doc_linter.py`, `srs_linter.py`, `testplan_linter.py`, `code_linter.py`) | Programmer | QA Lead | Linters execute via CLI and exit non‑zero on first rule violation; unit tests cover ≥90% branches; CI passes. | Pending |
