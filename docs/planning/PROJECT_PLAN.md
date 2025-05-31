@@ -25,6 +25,13 @@
 | 18 | **Research retrospective on redundant steps** | Project Manager | Architect | Document detailing redundant steps and lessons learned added to `docs/RESEARCH_RETROSPECTIVE.md`. ✅ | Done |
 | 19 | **Create roles folder with templates** (`docs/roles/`) | Project Manager | Architect | Folder contains one template per role and a README explaining usage. | Pending |
 
+| 20 | **Define Project Manager methodologies** (`docs/roles/project_manager.md`) | Project Manager | Architect | Document lists Agile and Waterfall best practices; passes `doc_linter`. | Pending |
+| 21 | **Define Architect methodologies** (`docs/roles/architect.md`) | Architect | Programmer | Document details Domain-Driven Design and patterns; passes `doc_linter`. | Pending |
+| 22 | **Define Systems Analyst methodologies** (`docs/roles/systems_analyst.md`) | Systems Analyst | Architect | Document explains requirement analysis methods; passes `doc_linter`. | Pending |
+| 23 | **Define Programmer methodologies** (`docs/roles/programmer.md`) | Programmer | QA Lead | Document describes TDD, DRY, OOP approach; passes `doc_linter`. | Pending |
+| 24 | **Define DevOps methodologies** (`docs/roles/devops.md`) | DevOps | QA Lead | Document covers CI/CD and IaC guidelines; passes `doc_linter`. | Pending |
+| 25 | **Define QA Lead methodologies** (`docs/roles/qa_lead.md`) | QA Lead | Support Lead | Document describes test automation and BDD; passes `doc_linter`. | Pending |
+| 26 | **Define Support Lead methodologies** (`docs/roles/support_lead.md`) | Support Lead | Project Manager | Document includes ITIL processes and root cause analysis; passes `doc_linter`. | Pending |
 > **Progress Tracking:** Update the Status column and add ✅ in the DoD column once criteria are met.
 
 ---
