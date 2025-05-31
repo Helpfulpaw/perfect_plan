@@ -1,13 +1,24 @@
 #!/usr/bin/env python3
-"""Select a random unblocked task from PROJECT_PLAN.md."""
+"""Select a random unblocked task and load its role prompt."""
 
 import random
 from pathlib import Path
 
 PLAN_PATH = Path(__file__).resolve().parents[1] / "docs" / "planning" / "PROJECT_PLAN.md"
+ROLES_DIR = Path(__file__).resolve().parents[1] / "docs" / "roles"
 
 
-def parse_plan(plan_path: Path) -> list:
+def slugify(role: str) -> str:
+    return role.lower().replace(" ", "_")
+
+
+def load_role_prompt(role: str) -> str:
+    path = ROLES_DIR / f"{slugify(role)}.md"
+    lines = path.read_text().splitlines()
+    return lines[1].strip() if len(lines) > 1 else ""
+
+
+def parse_plan(plan_path: Path) -> list[dict]:
     tasks = []
     with plan_path.open() as f:
         for line in f:
@@ -15,15 +26,24 @@ def parse_plan(plan_path: Path) -> list:
                 cells = [c.strip() for c in line.strip().strip('|').split('|')]
                 if not cells[0].isdigit():
                     continue
-                status = cells[-1].lower()
-                if status not in {"done", "blocked"}:
-                    tasks.append(int(cells[0]))
+                tasks.append({
+                    "id": int(cells[0]),
+                    "task": cells[1],
+                    "role": cells[2],
+                    "reviewers": cells[3],
+                    "dod": cells[4],
+                    "status": cells[5].lower(),
+                })
     return tasks
 
 
-def get_random_task() -> int | None:
-    avail = parse_plan(PLAN_PATH)
-    return random.choice(avail) if avail else None
+def get_random_task() -> dict | None:
+    tasks = [t for t in parse_plan(PLAN_PATH) if t["status"] not in {"done", "blocked"}]
+    if not tasks:
+        return None
+    chosen = random.choice(tasks)
+    chosen["prompt"] = load_role_prompt(chosen["role"])
+    return chosen
 
 
 def main() -> int:
@@ -31,7 +51,9 @@ def main() -> int:
     if task is None:
         print("No pending tasks")
         return 1
-    print(f"task_{task:02d}")
+    print(f"task_{task['id']:02d}")
+    print(task["task"])
+    print(task["prompt"])
     return 0
 
 
