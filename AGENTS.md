@@ -26,3 +26,4 @@ After completing a task:
 - Place architecture templates in a dedicated folder and provide a specific linter.
 - Create combined role prompt files when tasks reference multiple roles to avoid script errors.
 - Clarify artifact ownership by including a `Responsible Role` section in templates.
+- Confirm prerequisite tasks are completed before marking dependent tasks Done.
