@@ -32,6 +32,7 @@
 | 24 | **Define DevOps methodologies** (`docs/roles/devops.md`) | DevOps | QA Lead | Document covers CI/CD and IaC guidelines; passes `doc_linter`. | Pending |
 | 25 | **Define QA Lead methodologies** (`docs/roles/qa_lead.md`) | QA Lead | Support Lead | Document describes test automation and BDD; passes `doc_linter`. | Pending |
 | 26 | **Define Support Lead methodologies** (`docs/roles/support_lead.md`) | Support Lead | Project Manager | Document includes ITIL processes and root cause analysis; passes `doc_linter`. | Pending |
+| 27 | **Refactor role prompts** (`src/role_utils.py`, template + linter) | Programmer | QA Lead | Role registry lists slugs only; prompts stored separately; linter validates each role file. | Pending |
 > **Progress Tracking:** Update the Status column and add ✅ in the DoD column once criteria are met.
 
 ---
