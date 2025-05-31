@@ -24,3 +24,4 @@ After completing a task:
   contributors understand context.
 - Split role prompts into individual files under `docs/roles/` and added a linter to enforce their format.
 - Keep the role/prompt/linter registry updated whenever new roles or linters are introduced.
+- Capture retrospectives on redundant steps to refine future processes.
