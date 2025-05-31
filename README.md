@@ -14,6 +14,8 @@ and dialog transcripts reside in the `tasks/` directory.
 ## Repository Structure
 
 - `docs/` – planning documents and templates
+  - `architecture/` – templates, prompts, and examples for design diagrams
+  - `spc/` – specification templates and example artifacts
 - `linters/` – custom linting scripts
 - `metrics/` – metrics collection utilities
 - `process/` – process documentation
