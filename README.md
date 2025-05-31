@@ -1,4 +1,5 @@
 # Perfect Plan Repository
+[![CI](https://github.com/Helpfulpaw/perfect_plan/actions/workflows/ci.yml/badge.svg)](https://github.com/Helpfulpaw/perfect_plan/actions/workflows/ci.yml)
 
 This repository houses planning documents and utilities for the **Waterfall-Docs-Repo** project.
 The main checklist lives in [docs/planning/PROJECT_PLAN.md](docs/planning/PROJECT_PLAN.md).
