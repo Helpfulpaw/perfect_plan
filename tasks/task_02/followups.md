@@ -1,0 +1,2 @@
+- Create doc_linter script (Task 5) before marking this task complete.
+- Choose an appropriate open-source license.
