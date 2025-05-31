@@ -7,7 +7,7 @@
 | 0  | **Create reviewer roles and prompts** (`docs/ROLES_PROMPTS.md`, `AGENTS.md`) | Project Manager | Architect | Roles file with prompts exists; root instructions reference it. | Done |
 | 1  | **Initialize repository scaffold** (root folders `/docs`, `/src`, `/linters`, `/metrics`, `.github/workflows`) | Project Manager | Architect | All directories created, pushed to `main`, README stub present. ✅ | Done |
 | 2  | **Add README.md & LICENSE** | Project Manager | Systems Analyst | README outlines purpose & structure; LICENSE file committed; both pass `doc_linter`. ✅ | Done |
-| 3  | **Author core templates** (`ARCHITECTURE_TEMPLATE.md`, `SRS_TEMPLATE.md`, `TESTPLAN_TEMPLATE.md`, etc.) | Architect | Project Manager | Each template contains only section headings + field descriptions; token ≤ 3000; passes `doc_linter`. ✅ | Done |
+| 3  | **Author core templates** (`docs/architecture/ARCHITECTURE_TEMPLATE.md`, `SRS_TEMPLATE.md`, `TESTPLAN_TEMPLATE.md`, etc.) | Architect | Project Manager | Each template contains only section headings + field descriptions; token ≤ 3000; passes `doc_linter`. ✅ | Done |
 | 4  | **Create example artifacts** (`*_EXAMPLE.md`) demonstrating template use | Systems Analyst & Architect | QA Lead | Example docs fully populated for this repo, reference IDs valid, lint‑clean. | Pending |
 | 5  | **Implement linters** (`doc_linter.py`, `srs_linter.py`, `testplan_linter.py`, `code_linter.py`) | Programmer | QA Lead | Linters execute via CLI and exit non‑zero on first rule violation; unit tests cover ≥90% branches; CI passes. ✅ | Done |
 | 6  | **Add metrics scripts** (`metrics/count_tokens.py`, `metrics/complexity.py`, `metrics/pr_latency.py`) | Architect | DevOps | Scripts output JSON with metric name/value; integration test proves Prometheus push succeeds (mock). | Pending |
@@ -20,7 +20,7 @@
 | 13 | **Phase‑gate review & baseline** | Project Manager | Architect, QA Lead | All artifacts frozen at v1.0 tag; RTM complete; milestone closed in project board. | Pending |
 | 14 | **Audit task list for role & reviewer coverage** | Project Manager | Architect | Every task has clearly defined responsible and reviewer roles. | Pending |
 | 15 | **Add task DAG linter** (`linters/task_dag_linter.py`) | Programmer | QA Lead | Linter verifies tasks form a DAG and docs are up to date. | Pending |
-| 16 | **Populate architecture folder** (`docs/architecture/`) with templates, prompts, example diagrams and dedicated linters | Architect | Project Manager | Folder README outlines structure; files exist as separate templates, prompts, examples; each diagram validated by its linter. | Pending |
+| 16 | **Populate architecture folder** (`docs/architecture/`) with templates, prompts, example diagrams and dedicated linters | Architect | Project Manager | Folder README outlines structure; files exist as separate templates, prompts, examples; each diagram validated by its linter. ✅ | Done |
 | 17 | **Populate specification folder** (`docs/spc/`) with templates, prompts, examples and diagram linters | Systems Analyst | Architect | README explains layout; individual files added; lint passes for each diagram. ✅ | Done |
 | 18 | **Research retrospective on redundant steps** | Project Manager | Architect | Document detailing redundant steps and lessons learned added to `docs/RESEARCH_RETROSPECTIVE.md`. ✅ | Done |
 | 19 | **Create roles folder with templates** (`docs/roles/`) | Project Manager | Architect | Folder contains one template per role and a README explaining usage. | Pending |

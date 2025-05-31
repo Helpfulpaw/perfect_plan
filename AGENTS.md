@@ -23,3 +23,4 @@ After completing a task:
 - Keep diagram examples minimal so linters remain simple.
 
 - Verify role documents with `doc_linter` after updating methodologies.
+- Place architecture templates in a dedicated folder and provide a specific linter.
