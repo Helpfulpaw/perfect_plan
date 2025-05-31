@@ -1,4 +1,4 @@
 - Reference: ../../docs/planning/PROJECT_PLAN.md
 - Depends on: 1, 5
-- Create doc_linter script (Task 5) before marking this task complete.
-- Choose an appropriate open-source license.
+- Doc linter now implemented (Task 5 complete).
+- Choose MIT as the open-source license and commit LICENSE file.
