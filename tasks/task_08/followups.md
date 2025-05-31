@@ -1,2 +1,3 @@
 - Reference: ../../docs/planning/PROJECT_PLAN.md
 - Depends on: 3, 4
+- Integrate test coverage for example artifacts once Task 4 delivers them.
