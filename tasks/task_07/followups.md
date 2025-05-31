@@ -1,2 +1,3 @@
 - Reference: ../../docs/planning/PROJECT_PLAN.md
 - Depends on: 5, 6
+- Follow up: integrate metrics scripts into metrics workflow after task 6
