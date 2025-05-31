@@ -1,0 +1,3 @@
+- Reference: ../../docs/planning/PROJECT_PLAN.md
+- Reference: ../../docs/ROLES_PROMPTS.md
+- Depends on: 5, 19

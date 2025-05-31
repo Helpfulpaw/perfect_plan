@@ -24,3 +24,4 @@ After completing a task:
 
 - Verify role documents with `doc_linter` after updating methodologies.
 - Place architecture templates in a dedicated folder and provide a specific linter.
+- Create combined role prompt files when tasks reference multiple roles to avoid script errors.

@@ -7,6 +7,7 @@ Each role prompt is stored in its own file under `docs/roles/`.
 | Project Manager | `docs/roles/project_manager.md` |
 | Architect | `docs/roles/architect.md` |
 | Systems Analyst | `docs/roles/systems_analyst.md` |
+| Systems Analyst & Architect | `docs/roles/systems_analyst_&_architect.md` |
 | Programmer | `docs/roles/programmer.md` |
 | DevOps | `docs/roles/devops.md` |
 | QA Lead | `docs/roles/qa_lead.md` |
