@@ -13,7 +13,7 @@
 | 6  | **Add metrics scripts** (`metrics/count_tokens.py`, `metrics/complexity.py`, `metrics/pr_latency.py`) | Architect | DevOps | Scripts output JSON with metric name/value; integration test proves Prometheus push succeeds (mock). | Pending |
 | 7  | **Configure CI workflows** (`ci.yml`, `metrics.yml`) | DevOps | Programmer | On every PR CI runs all linters + tests; status badge green on `main`; secrets set for metrics push. | Pending |
 | 8  | **Write QA Test Plan & test cases** (`docs/TEST_PLAN.md`, `docs/TEST_CASES.md`) | QA Lead | Support Lead | Documents exist, pass `testplan_linter`; traceability matrix links each requirement to at least one test case. | Pending |
-| 9  | **Populate Role / Prompt / Linter registry** (`ROLES_PROMPTS_LINTERS.md`) | Project Manager | Architect | Table lists all roles, prompt skeletons, linter mapping; reviewed by Architect & QA. | Pending |
+| 9  | **Populate Role / Prompt / Linter registry** (`ROLES_PROMPTS_LINTERS.md`) | Project Manager | Architect | Table lists all roles, prompt skeletons, linter mapping; reviewed by Architect & QA. ✅ | Done |
 | 10 | **Implement architecture metrics dashboard config** (`metrics/grafana/*.json`) | DevOps | Architect | JSON dashboards imported into Grafana test instance showing real data; screenshot attached to PR. | Pending |
 | 11 | **Add CONTRIBUTING.md & pre‑commit hook** to run linters pre‑push | Project Manager & Programmer | QA Lead | Hook blocks commit on linter failure; CONTRIBUTING lists setup steps; validated on a fresh clone. | Pending |
 | 12 | **Create Maintenance & Support Plan** (`docs/MAINTENANCE_PLAN.md`) | Support Lead | Project Manager | Plan covers issue triage, SLAs, routine tasks; approved by PM; passes `doc_linter`. | Pending |
