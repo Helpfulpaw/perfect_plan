@@ -4,8 +4,9 @@
 import random
 from pathlib import Path
 
-PLAN_PATH = Path(__file__).resolve().parents[1] / "docs" / "planning" / "PROJECT_PLAN.md"
-ROLES_DIR = Path(__file__).resolve().parents[1] / "docs" / "roles"
+ROOT_DIR = Path(__file__).resolve().parents[1]
+PLAN_PATH = ROOT_DIR / "docs" / "planning" / "PROJECT_PLAN.md"
+ROLES_DIR = ROOT_DIR / "docs" / "roles"
 
 
 def slugify(role: str) -> str:
@@ -43,6 +44,7 @@ def get_random_task() -> dict | None:
         return None
     chosen = random.choice(tasks)
     chosen["prompt"] = load_role_prompt(chosen["role"])
+    chosen["root"] = str(ROOT_DIR)
     return chosen
 
 
@@ -54,6 +56,7 @@ def main() -> int:
     print(f"task_{task['id']:02d}")
     print(task["task"])
     print(task["prompt"])
+    print(task["root"])
     return 0
 
 

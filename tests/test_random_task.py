@@ -18,6 +18,7 @@ def test_parse_plan(tmp_path, monkeypatch):
     role_dir = tmp_path / "roles"
     role_dir.mkdir()
     (role_dir / "dev.md").write_text("# Dev\nPrompt\n")
+    monkeypatch.setattr(random_task, "ROOT_DIR", tmp_path)
     monkeypatch.setattr(random_task, "PLAN_PATH", plan)
     monkeypatch.setattr(random_task, "ROLES_DIR", role_dir)
     tasks = random_task.parse_plan(plan)
@@ -25,3 +26,4 @@ def test_parse_plan(tmp_path, monkeypatch):
     task = random_task.get_random_task()
     assert task["id"] == 1
     assert task["prompt"] == "Prompt"
+    assert task["root"] == str(tmp_path)
