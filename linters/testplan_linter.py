@@ -1,8 +1,27 @@
 #!/usr/bin/env python3
-"""Placeholder test plan linter."""
+"""Simple test plan linter."""
 
-def main():
-    print("testplan_linter not implemented yet")
+import argparse
+import sys
+from pathlib import Path
+
+from lint_utils import check_no_todo
+
+
+def main(argv=None) -> int:
+    parser = argparse.ArgumentParser(description="Test plan linter")
+    parser.add_argument("files", nargs="+", help="Files to lint")
+    args = parser.parse_args(argv)
+
+    for path_str in args.files:
+        path = Path(path_str)
+        if not path.exists():
+            print(f"File not found: {path}")
+            return 1
+        if not check_no_todo(path):
+            return 1
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
