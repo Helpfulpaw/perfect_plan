@@ -14,4 +14,6 @@ Use this process whenever you add a new task or generate a follow-up task.
 5. Decompose large work into smaller follow-up tasks and record them in
    `followups.md`.
 6. Reference related documentation using relative paths.
+7. If the task introduces a new role or linter, update
+   `docs/ROLES_PROMPTS_LINTERS.md` to keep the registry current.
 

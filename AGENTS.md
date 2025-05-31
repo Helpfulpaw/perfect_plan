@@ -26,3 +26,4 @@ After completing a task:
 - Record new reference documents in each task's `followups.md` so future
   contributors understand context.
 - Split role prompts into individual files under `docs/roles/` and added a linter to enforce their format.
+- Keep the role/prompt/linter registry updated whenever new roles or linters are introduced.
