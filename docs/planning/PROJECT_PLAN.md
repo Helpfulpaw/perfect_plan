@@ -23,6 +23,7 @@
 | 16 | **Populate architecture folder** (`docs/architecture/`) with templates, prompts, example diagrams and dedicated linters | Architect | Project Manager | Folder README outlines structure; files exist as separate templates, prompts, examples; each diagram validated by its linter. | Pending |
 | 17 | **Populate specification folder** (`docs/spc/`) with templates, prompts, examples and diagram linters | Systems Analyst | Architect | README explains layout; individual files added; lint passes for each diagram. | Pending |
 | 18 | **Research retrospective on redundant steps** | Project Manager | Architect | Document detailing redundant steps and lessons learned added to `docs/RESEARCH_RETROSPECTIVE.md`. | Pending |
+| 19 | **Create roles folder with templates** (`docs/roles/`) | Project Manager | Architect | Folder contains one template per role and a README explaining usage. | Pending |
 
 > **Progress Tracking:** Update the Status column and add ✅ in the DoD column once criteria are met.
 

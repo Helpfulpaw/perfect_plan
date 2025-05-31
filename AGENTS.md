@@ -1,21 +1,17 @@
 # Agent Instructions
 
-The repository defines processes for creating and executing tasks.
+The repository defines two processes: executing an existing task or creating a
+new one.
 
 ## Execute a Task
-1. Locate the active task in `docs/planning/PROJECT_PLAN.md`.
-2. Review the prompts for the responsible and reviewer roles in
-   `docs/ROLES_PROMPTS.md`.
-3. Read any notes for the task in `tasks/task_XX/`.
-4. Record dialog and decisions in `tasks/task_XX/README.md` and update
-   `followups.md` with dependencies.
-5. Follow the checklist in `process/PROCESS_TEMPLATE.md`.
-
-More detail is available in `process/EXECUTE_TASK.md`.
+If the request is to **execute a task**, follow the step-by-step instructions
+provided by the script. Role prompts are located in
+`docs/ROLES_PROMPTS.md` and each role may have a template under
+`docs/roles/`.
 
 ## Create a Task
-When defining a new task or follow-up, use `process/CREATE_TASK.md` for the
-steps to add it to the project plan and initialize the task folder.
+If the request is to **create a task**, follow `process/CREATE_TASK.md` to add
+it to the project plan and create its folder.
 
 - Work on one task at a time.
 
@@ -28,3 +24,5 @@ After completing a task:
 - Avoid scanning the `tasks/` directory to discover new work. Use
   `docs/planning/PROJECT_PLAN.md` or `python src/random_task.py` to select a
   pending task.
+- Record new reference documents in each task's `followups.md` so future
+  contributors understand context.

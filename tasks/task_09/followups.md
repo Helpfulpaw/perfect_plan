@@ -1,2 +1,3 @@
 - Reference: ../../docs/planning/PROJECT_PLAN.md
+- Reference: ../../docs/ROLES_PROMPTS_LINTERS.md
 - Depends on: 0, 5
