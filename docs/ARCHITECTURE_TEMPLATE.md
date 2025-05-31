@@ -5,6 +5,8 @@ Describe the overall system and its goals.
 
 ## Components
 List major components and their responsibilities.
+- Task selector script (`src/random_task.py`) picks a random unblocked task from
+  `docs/planning/PROJECT_PLAN.md`.
 
 ## Data Flow
 Explain how data moves between components.

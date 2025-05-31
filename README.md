@@ -11,6 +11,8 @@ Role prompts are documented in [docs/ROLES_PROMPTS.md](docs/ROLES_PROMPTS.md).
 Review processes are outlined in [process/PROCESS_TEMPLATE.md](process/PROCESS_TEMPLATE.md),
 and dialog transcripts reside in the `tasks/` directory.
 
+Use `python src/random_task.py` to fetch a random task from the project plan.
+
 ## Repository Structure
 
 - `docs/` – planning documents and templates
@@ -19,7 +21,7 @@ and dialog transcripts reside in the `tasks/` directory.
 - `linters/` – custom linting scripts
 - `metrics/` – metrics collection utilities
 - `process/` – process documentation
-- `src/` – project source code samples
+- `src/` – project source code samples including `random_task.py`
 - `tasks/` – conversation transcripts and follow-ups
 - `tests/` – unit tests for repository tools
 
