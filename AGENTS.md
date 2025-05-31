@@ -20,4 +20,5 @@ After completing a task:
 ### Lessons Learned
 
 - Ensure test plans include a traceability matrix linking each requirement to at least one test case.
+- Keep diagram examples minimal so linters remain simple.
 
