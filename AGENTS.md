@@ -27,3 +27,4 @@ After completing a task:
 - Create combined role prompt files when tasks reference multiple roles to avoid script errors.
 - Clarify artifact ownership by including a `Responsible Role` section in templates.
 - Confirm prerequisite tasks are completed before marking dependent tasks Done.
+- Leave a task pending if prerequisites are incomplete, even when the artifact is finished.
