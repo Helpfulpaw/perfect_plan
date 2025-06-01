@@ -30,7 +30,7 @@
 | 22 | **Define Systems Analyst methodologies** (`docs/roles/systems_analyst.md`) | Systems Analyst | Architect | Document explains requirement analysis methods; passes `doc_linter`. | Pending |
 | 23 | **Define Programmer methodologies** (`docs/roles/programmer.md`) | Programmer | QA Lead | Document describes TDD, DRY, OOP approach; passes `doc_linter`. | Pending |
 | 24 | **Define DevOps methodologies** (`docs/roles/devops.md`) | DevOps | QA Lead | Document covers CI/CD and IaC guidelines; passes `doc_linter`. ✅ | Done |
-| 25 | **Define QA Lead methodologies** (`docs/roles/qa_lead.md`) | QA Lead | Support Lead | Document describes test automation and BDD; passes `doc_linter`. | Pending |
+| 25 | **Define QA Lead methodologies** (`docs/roles/qa_lead.md`) | QA Lead | Support Lead | Document describes test automation and BDD; passes `doc_linter`. ✅ | Done |
 | 26 | **Define Support Lead methodologies** (`docs/roles/support_lead.md`) | Support Lead | Project Manager | Document includes ITIL processes and root cause analysis; passes `doc_linter`. | Pending |
 | 27 | **Refactor role prompts** (`src/role_utils.py`, template + linter) | Programmer | QA Lead | Role registry lists slugs only; prompts stored separately; linter validates each role file. | Pending |
 | 28 | **Integrate metrics scripts into workflow** (`metrics.yml`) | DevOps | Architect | `metrics.yml` runs scripts from task 6 and pushes results; CI shows success. | Pending |
