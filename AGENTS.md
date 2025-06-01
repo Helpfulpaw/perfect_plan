@@ -21,10 +21,10 @@ After completing a task:
 
 - Ensure test plans include a traceability matrix linking each requirement to at least one test case.
 - Keep diagram examples minimal so linters remain simple.
-
 - Verify role documents with `doc_linter` after updating methodologies.
 - Place architecture templates in a dedicated folder and provide a specific linter.
 - Create combined role prompt files when tasks reference multiple roles to avoid script errors.
 - Clarify artifact ownership by including a `Responsible Role` section in templates.
-- Confirm prerequisite tasks are completed before marking dependent tasks Done.
+- Confirm prerequisite tasks are completed before marking dependent tasks
 - Provide detailed methodology bullet points when documenting each role.
+- Leave a task pending if prerequisites are incomplete, even when the artifact is finished
