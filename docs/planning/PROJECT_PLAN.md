@@ -36,6 +36,12 @@
 | 28 | **Integrate metrics scripts into workflow** (`metrics.yml`) | DevOps | Architect | `metrics.yml` runs scripts from task 6 and pushes results; CI shows success. | Pending |
 | 29 | **Audit role methodology documents** (`docs/roles/*.md`) | QA Lead | Project Manager | Each role file lists at least three methodologies and passes `doc_linter`; tasks 20‑26 marked Done. | Pending |
 | 30 | **Add Responsible Role field to templates** (`docs/*_TEMPLATE.md`, examples, `linters/artifact_role_linter.py`) | Architect | Systems Analyst, Programmer | Templates and examples include a `Responsible Role` section; new linter ensures presence. | Pending |
+| 31 | **Create tasks for glossary development department** (plan LLM-driven glossary system) | Project Manager | Architect | New tasks enumerated for local LLM glossary department with dependencies mapped; doc_linter passes. | Pending |
+| 32 | **Document glossary system requirements** (`docs/glossary_system/REQUIREMENTS.md`) | Systems Analyst | Architect | Requirements file describes features and constraints for local LLM glossary department; passes `doc_linter`. | Pending |
+| 33 | **Design glossary department architecture** (`docs/glossary_system/ARCHITECTURE.md`) | Architect | Programmer | Architecture document outlines agents and data flow for glossary generation; passes `architecture_linter`. | Pending |
+| 34 | **Prepare data and training pipeline** (`src/glossary_pipeline/`) | Programmer | QA Lead | Data pipeline scripts and tests added; passes `code_linter` and `pytest`. | Pending |
+| 35 | **Implement local LLM glossary agents** (`src/glossary_agents/`) | Programmer | QA Lead | Agents generate glossary terms using local model; code passes `code_linter`. | Pending |
+| 36 | **Evaluate glossary generation system** (`docs/glossary_system/EVALUATION.md`) | QA Lead | Support Lead | Evaluation report details accuracy and improvements; passes `doc_linter`. | Pending |
 > **Progress Tracking:** Update the Status column and add ✅ in the DoD column once criteria are met.
 
 ---
